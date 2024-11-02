@@ -17,7 +17,7 @@ flutter_native_splash:
 
   # iOS & Android ( < 31/12)
 
-  color: "#42a5f5"
+  color: "#ffffff"
   #background_image: "assets/background.png"
 
   # Optional parameters are listed below.  To enable a parameter, uncomment the line by removing
