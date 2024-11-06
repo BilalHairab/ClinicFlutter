@@ -1,5 +1,6 @@
 import 'package:clinic_flutter/core/di/dependency_injection.dart';
 import 'package:clinic_flutter/core/routing/routes.dart';
+import 'package:clinic_flutter/features/home/ui/home_screen.dart';
 import 'package:clinic_flutter/features/login/logic/login_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -10,8 +11,10 @@ import '../../features/login/ui/login_screen.dart';
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
     switch (settings.name) {
+      case Routes.homeScreen:
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
       case Routes.onBoardingScreen:
-        return MaterialPageRoute(builder: (_) => OnBoardingScreen());
+        return MaterialPageRoute(builder: (_) => const OnBoardingScreen());
       case Routes.loginScreen:
         return MaterialPageRoute(builder: (_) =>
             BlocProvider(
