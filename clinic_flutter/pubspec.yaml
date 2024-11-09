@@ -59,6 +59,7 @@ dependencies:
   flutter_native_splash: ^2.3.5
   flutter_svg: ^2.0.9
   flutter_screenutil: ^5.9.0
+  firebase_core: ^2.24.2
 
 dev_dependencies:
   flutter_test:
@@ -112,3 +113,10 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+#Commands to use:
+#expose tools like dart/flutter in cmd: source ~/.bash_profile AND source ~/.bash-profile
+#add flutterfire: dart pub global activate flutterfire_cli
+#add flutterfire to path: export PATH="$PATH":"$HOME/.pub-cache/bin"
+#configure flutterfire: flutterfire configure
+#build apk: flutter build apk --flavor Production -t lib/main_production.dart

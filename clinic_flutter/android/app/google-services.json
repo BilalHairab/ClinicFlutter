@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "397021711051",
+    "project_id": "flutter-doctor-course",
+    "storage_bucket": "flutter-doctor-course.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397021711051:android:360693be52e779cd42694e",
+        "android_client_info": {
+          "package_name": "com.bhairab.clinic.clinic_flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSjfs-5IY0-10QlvLd13GLBDHDD2d1_cc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
