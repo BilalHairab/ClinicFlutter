@@ -15,7 +15,7 @@ class DioFactory {
       dio!
         ..options.connectTimeout = timeOut
         ..options.receiveTimeout = timeOut;
-      // addDioHeaders();
+      addDioHeaders();
       addDioInterceptor();
       return dio!;
     } else {
@@ -34,6 +34,12 @@ class DioFactory {
   static void setTokenIntoHeaderAfterLogin(String token) {
     dio?.options.headers = {
       'Authorization': 'Bearer $token',
+    };
+  }
+
+  static void addDioHeaders() {
+    dio?.options.headers = {
+      "Accept": "application/json",
     };
   }
 

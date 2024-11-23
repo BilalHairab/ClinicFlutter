@@ -116,6 +116,7 @@ flutter:
 
 #Commands to use:
 #expose tools like dart/flutter in cmd: source ~/.bash_profile AND source ~/.bash-profile
+#auto generate code: dart run build_runner build --delete-conflicting-outputs
 #add flutterfire: dart pub global activate flutterfire_cli
 #add flutterfire to path: export PATH="$PATH":"$HOME/.pub-cache/bin"
 #configure flutterfire: flutterfire configure
