@@ -23,7 +23,7 @@ class DoctorsListViewItem extends StatelessWidget {
                 fit: BoxFit.cover,
                 "https://static.wikia.nocookie.net/five-world-war/images/6/64/Hisoka.jpg/revision/latest?cb=20190313114050"),
           ),
-          16.w.toHorizontalSpacing(),
+          16.0.toHorizontalSpacing(),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -33,12 +33,12 @@ class DoctorsListViewItem extends StatelessWidget {
                   style: TextStyles.font18DarkBlueBold,
                   overflow: TextOverflow.ellipsis,
                 ),
-                5.h.toVerticalSpacing(),
+                5.0.toVerticalSpacing(),
                 Text(
                   "${doctor?.degree} | ${doctor?.phone}",
                   style: TextStyles.font12GrayMedium,
                 ),
-                5.h.toVerticalSpacing(),
+                5.0.toVerticalSpacing(),
                 Text(
                   doctor?.email ?? "Email",
                   style: TextStyles.font12GrayMedium,

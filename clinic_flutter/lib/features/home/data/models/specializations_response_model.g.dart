@@ -40,7 +40,7 @@ Map<String, dynamic> _$SpecializationsDataToJson(
       'doctors': instance.doctorsList,
     };
 
-Doctor _$DoctorsFromJson(Map<String, dynamic> json) => Doctor(
+Doctor _$DoctorFromJson(Map<String, dynamic> json) => Doctor(
       id: (json['id'] as num?)?.toInt(),
       name: json['name'] as String?,
       email: json['email'] as String?,
@@ -51,7 +51,7 @@ Doctor _$DoctorsFromJson(Map<String, dynamic> json) => Doctor(
       degree: json['degree'] as String,
     );
 
-Map<String, dynamic> _$DoctorsToJson(Doctor instance) => <String, dynamic>{
+Map<String, dynamic> _$DoctorToJson(Doctor instance) => <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
       'email': instance.email,
