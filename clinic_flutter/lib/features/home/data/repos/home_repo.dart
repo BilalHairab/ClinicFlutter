@@ -12,8 +12,8 @@ class HomeRepo {
     try {
       final response = await _homeApiService.getSpecializations();
       return ApiResult.success(response);
-    } catch(e) {
-      return ApiResult.failure(ErrorHandler.handle(e));
+    } catch (e) {
+      return ApiResult.failure(ApiErrorHandler.handle(e));
     }
   }
 }

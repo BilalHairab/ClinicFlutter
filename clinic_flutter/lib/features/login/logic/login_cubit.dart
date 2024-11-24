@@ -1,5 +1,6 @@
 import 'package:clinic_flutter/core/helpers/constants.dart';
 import 'package:clinic_flutter/core/helpers/shared_pref_helper.dart';
+import 'package:clinic_flutter/core/networking/api_error_handler.dart';
 import 'package:clinic_flutter/core/networking/dio_factory.dart';
 import 'package:clinic_flutter/features/login/data/models/login_request_body.dart';
 import 'package:flutter/cupertino.dart';
@@ -24,13 +25,13 @@ class LoginCubit extends Cubit<LoginState> {
 
     response.when(success: (loginResponse) async {
       if(loginResponse.userData?.token == null) {
-        emit(const LoginState.error(error: 'Invalid Login'));
+        emit(LoginState.error(ApiErrorHandler.handle("Invalid Login")));
         return;
       }
       await saveUserToken(loginResponse.userData!.token!);
       emit(LoginState.success(loginResponse));
-    }, failure: (error) {
-      emit(LoginState.error(error: error.apiErrorModel.message ?? ''));
+    }, failure: (apiErrorModel) {
+      emit(LoginState.error(apiErrorModel));
     });
   }
 

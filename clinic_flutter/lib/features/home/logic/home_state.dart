@@ -1,6 +1,7 @@
 import 'package:clinic_flutter/core/networking/api_error_handler.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
+import '../../../core/networking/api_error_model.dart';
 import '../data/models/specializations_response_model.dart';
 
 part 'home_state.freezed.dart';
@@ -12,9 +13,9 @@ class HomeState with _$HomeState {
   //Specializations
   const factory HomeState.specializationsLoading() = SpecializationsLoading;
   const factory HomeState.specializationsSuccess(List<SpecializationsData?>? specializationDataList) = SpecializationsSuccess;
-  const factory HomeState.error(ErrorHandler handler) = SpecializationsError;
+  const factory HomeState.error(ApiErrorModel apiErrorModel) = SpecializationsError;
 
   //Doctors
   const factory HomeState.doctorsSuccess(List<Doctor?>? doctorsList) = DoctorsSuccess;
-  const factory HomeState.doctorsError(ErrorHandler errorHandler) = DoctorsError;
+  const factory HomeState.doctorsError(ApiErrorModel apiErrorModel) = DoctorsError;
 }
