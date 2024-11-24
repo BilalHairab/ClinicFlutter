@@ -1,3 +1,5 @@
+import 'package:clinic_flutter/core/helpers/constants.dart';
+import 'package:clinic_flutter/core/helpers/shared_pref_helper.dart';
 import 'package:dio/dio.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
@@ -37,9 +39,10 @@ class DioFactory {
     };
   }
 
-  static void addDioHeaders() {
+  static void addDioHeaders() async {
     dio?.options.headers = {
       "Accept": "application/json",
+      "Authorization": "Bearer ${SharedPrefHelper.getSecuredString(SharedPrefKeys.userToken)}"
     };
   }
 

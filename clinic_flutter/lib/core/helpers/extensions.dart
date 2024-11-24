@@ -25,3 +25,7 @@ extension SpacingDimension on double {
     return SizedBox(width: w,);
   }
 }
+
+extension StringExtension on String? {
+  bool isNullOrEmpty() => this == null || this == "";
+}

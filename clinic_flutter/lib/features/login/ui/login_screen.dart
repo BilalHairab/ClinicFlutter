@@ -1,7 +1,6 @@
 import 'package:clinic_flutter/core/helpers/extensions.dart';
 import 'package:clinic_flutter/core/theming/styles.dart';
 import 'package:clinic_flutter/core/widgets/app_text_button.dart';
-import 'package:clinic_flutter/features/login/data/models/login_request_body.dart';
 import 'package:clinic_flutter/features/login/logic/login_cubit.dart';
 import 'package:clinic_flutter/features/login/ui/widgets/dont_have_account_text.dart';
 import 'package:clinic_flutter/features/login/ui/widgets/email_and_password.dart';
