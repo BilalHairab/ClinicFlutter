@@ -1,10 +1,12 @@
+import 'package:clinic_flutter/core/helpers/extensions.dart';
+import 'package:clinic_flutter/features/home/ui/widgets/specializations_list/speciality_shimmer_loading.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../data/models/specializations_response_model.dart';
-import '../../logic/home_cubit.dart';
-import '../../logic/home_state.dart';
+import '../../../data/models/specializations_response_model.dart';
+import '../../../logic/home_cubit.dart';
+import '../../../logic/home_state.dart';
+import '../doctors_list/doctors_shimmer_loading.dart';
 import 'speciality_list_view.dart';
 
 class SpecializationsBlocBuilder extends StatelessWidget {
@@ -29,11 +31,15 @@ class SpecializationsBlocBuilder extends StatelessWidget {
     );
   }
 
+  //This shimmer is for both Speciality and Doctors, try to think of a better way to handle states
   Widget setupLoading() {
-    return SizedBox(
-      height: 100.h,
-      child: const Center(
-        child: CircularProgressIndicator(),
+    return Expanded(
+      child: Column(
+        children: [
+          const SpecialityShimmerLoading(),
+          8.0.toVerticalSpacing(),
+          const DoctorsShimmerLoading(),
+        ],
       ),
     );
   }

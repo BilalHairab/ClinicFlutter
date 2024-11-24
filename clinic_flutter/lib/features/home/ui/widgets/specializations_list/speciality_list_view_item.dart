@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../../core/theming/colors.dart';
-import '../../../../core/theming/styles.dart';
+import '../../../../../core/theming/colors.dart';
+import '../../../../../core/theming/styles.dart';
 
 class SpecialityListViewItem extends StatelessWidget {
   final SpecializationsData? specializationsData;
@@ -23,7 +23,7 @@ class SpecialityListViewItem extends StatelessWidget {
         children: [
           itemIndex == selectedIndex
               ? Container(
-                  decoration: BoxDecoration(border: Border.all(color: ColorsManager.darkBlue), shape: BoxShape.circle),
+                  decoration: BoxDecoration(border: Border.all(color: ColorsManager.darkBlue, width: 1.4), shape: BoxShape.circle),
                   child: CircleAvatar(
                     radius: 28.0.r,
                     backgroundColor: ColorsManager.lighterGray,

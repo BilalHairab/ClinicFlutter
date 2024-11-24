@@ -3,7 +3,8 @@ import 'package:clinic_flutter/features/home/data/models/specializations_respons
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../../../core/theming/styles.dart';
+import '../../../../../core/theming/styles.dart';
+
 
 class DoctorsListViewItem extends StatelessWidget {
   final Doctor? doctor;

@@ -1,6 +1,6 @@
 import 'package:clinic_flutter/features/home/data/models/specializations_response_model.dart';
 import 'package:clinic_flutter/features/home/logic/home_cubit.dart';
-import 'package:clinic_flutter/features/home/ui/widgets/speciality_list_view_item.dart';
+import 'package:clinic_flutter/features/home/ui/widgets/specializations_list/speciality_list_view_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

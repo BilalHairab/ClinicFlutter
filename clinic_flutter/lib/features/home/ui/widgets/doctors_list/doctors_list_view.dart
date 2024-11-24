@@ -1,6 +1,7 @@
 import 'package:clinic_flutter/features/home/data/models/specializations_response_model.dart';
-import 'package:clinic_flutter/features/home/ui/widgets/doctors_list_view_item.dart';
 import 'package:flutter/material.dart';
+
+import 'doctors_list_view_item.dart';
 
 class DoctorsListView extends StatelessWidget {
   final List<Doctor?>? doctorsList;

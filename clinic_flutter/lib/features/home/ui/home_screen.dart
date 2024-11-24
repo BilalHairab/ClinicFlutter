@@ -1,12 +1,11 @@
 import 'package:clinic_flutter/core/helpers/extensions.dart';
-import 'package:clinic_flutter/features/home/ui/widgets/doctors_bloc_builder.dart';
 import 'package:clinic_flutter/features/home/ui/widgets/doctors_blue_container.dart';
+import 'package:clinic_flutter/features/home/ui/widgets/doctors_list/doctors_bloc_builder.dart';
 import 'package:clinic_flutter/features/home/ui/widgets/doctors_speciality_see_all.dart';
 import 'package:clinic_flutter/features/home/ui/widgets/home_top_bar.dart';
+import 'package:clinic_flutter/features/home/ui/widgets/specializations_list/specializations_bloc_builder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import 'widgets/specializations_bloc_builder.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
